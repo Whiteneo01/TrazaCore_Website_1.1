@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Representative industrial ERP and warehouse case studies plus an interactive operational ROI simulator.">
+  <title>Case Studies & ROI Simulator | TrazaCore Perú</title>
+  <link rel="icon" href="img/trazacore_logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="readingProgressBar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore Ingeniería &amp; Sistemas S.A.C. logo" width="142" height="38">
+      </a>
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+        <a href="about.html"><i class="bi bi-building"></i> About</a>
+        <a href="industries.html"><i class="bi bi-layers"></i> Industries</a>
+        <a href="services.html"><i class="bi bi-gear-wide-connected"></i> Services</a>
+        <a href="projects.html" class="active" aria-current="page"><i class="bi bi-briefcase"></i> Case Studies</a>
+        <a href="technology.html"><i class="bi bi-cpu"></i> Platform</a>
+        <a href="resources.html"><i class="bi bi-folder2-open"></i> Resources</a>
+        <button type="button" class="brief-btn" data-open-dialog="briefDialog"><i class="bi bi-file-earmark-text-fill"></i> Capability Brief</button>
+        <a class="contact-link" href="contact.html">Contact <i class="bi bi-arrow-up-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img class="page-hero-bg" src="img/case-fluid-valves.jpg" alt="Industrial stainless steel valves and verified supply chain case studies" width="1440" height="600" fetchpriority="high" decoding="async">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow light"><i class="bi bi-briefcase-fill"></i> CASE STUDIES &amp; ROI SIMULATOR</p>
+        <h1>Proven industrial impact<br>across Peru's core sectors.</h1>
+        <p>Explore representative engagements by vertical (with confidential contract terms protected) and estimate operational savings for your company below.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap">
+        <div class="filter-bar" data-filter-group=".project" role="group" aria-label="Filter case studies by sector">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All Case Studies (3)</button>
+          <button type="button" class="filter-btn" data-filter="hydrocarbons" aria-pressed="false"><i class="bi bi-droplet-half"></i> Hydrocarbons</button>
+          <button type="button" class="filter-btn" data-filter="mining" aria-pressed="false"><i class="bi bi-cone-striped"></i> Mining</button>
+          <button type="button" class="filter-btn" data-filter="petrochemicals" aria-pressed="false"><i class="bi bi-radioactive"></i> Petrochemicals</button>
+        </div>
+
+        <article class="project" data-category="hydrocarbons">
+          <img class="project-img" src="img/case-fluid-valves.jpg" alt="Industrial stainless steel valves and hydraulic pipeline assemblies" width="960" height="600" loading="lazy" decoding="async">
+          <div class="project-side">
+            <small>HYDROCARBONS · REFINERY SUPPLY</small>
+            <h3>Andina Fluidos &amp; Válvulas S.A.C.</h3>
+            <p>Warehouse modernization, unified ERP ordering &amp; digital test-certificate compliance.</p>
+          </div>
+          <div class="project-main">
+            <p><strong>Business Outcome:</strong> Replaced manual spreadsheets and paper test-cert binders across central and coastal facilities with automated USD purchasing, digital certificate holds, and guided mobile picking.</p>
+            <div class="result-grid">
+              <div class="result"><strong>+26.5 pts</strong><span>On-time delivery lift (62% <i class="bi bi-arrow-right"></i> 88.5%)</span></div>
+              <div class="result"><strong>-63%</strong><span>Faster order picking speed</span></div>
+              <div class="result"><strong>96.4%</strong><span>Verified inventory accuracy</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-category="mining">
+          <img class="project-img" src="img/case-mining-hub.jpg" alt="High-altitude mining haul truck and industrial supply operations" width="960" height="600" loading="lazy" decoding="async">
+          <div class="project-side">
+            <small>MINING · MULTI-SITE DEPOTS</small>
+            <h3>Minera Sur Logística &amp; Suministros S.A.C.</h3>
+            <p>Six-branch warehouse standardization, offline mobile scanning &amp; ISO 27001 controls.</p>
+          </div>
+          <div class="project-main">
+            <p><strong>Business Outcome:</strong> Connected six regional mining depots facing intermittent connectivity using offline-ready scanners, strict quality approval locks, and resilient cloud hosting.</p>
+            <div class="result-grid">
+              <div class="result"><strong>-65%</strong><span>Faster supplier order cycle</span></div>
+              <div class="result"><strong>94.8%</strong><span>Multi-site cycle count accuracy</span></div>
+              <div class="result"><strong>99.94%</strong><span>Measured cloud availability</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-category="petrochemicals">
+          <img class="project-img" src="img/case-chemical-mro.jpg" alt="Industrial processing facility and regulated MRO supply operations" width="960" height="600" loading="lazy" decoding="async">
+          <div class="project-side">
+            <small>PETROCHEMICALS · INDUSTRIAL SUPPLY</small>
+            <h3>Petroquímica del Pacífico Servicios S.A.C.</h3>
+            <p>Product catalog cleanup, smooth zero-stop transition, digital safety-sheet library &amp; 24/7 care.</p>
+          </div>
+          <div class="project-main">
+            <p><strong>Business Outcome:</strong> Cleaned and migrated over 14,500 complex product records without pausing Monday dispatches, connecting SUNAT electronic guides with instant batch and safety-sheet traceability.</p>
+            <div class="result-grid">
+              <div class="result"><strong>0.0%</strong><span>Transition inventory variance</span></div>
+              <div class="result"><strong>100%</strong><span>Lot traceability compliance</span></div>
+              <div class="result"><strong>13.5 mo.</strong><span>Estimated investment payback</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="roi-simulator" class="section alt reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><i class="bi bi-calculator-fill"></i> INDUSTRIAL ROI &amp; EFFICIENCY SIMULATOR</p>
+          <h2>Estimate annual operational <span>hours and cost savings.</span></h2>
+          <p class="sub">Adjust the sliders to mirror your warehouse staffing, order volume, and current picking speed to project potential efficiency gains.</p>
+        </div>
+
+        <div class="sim-box">
+          <form id="roiCalculator" class="sim-grid" onsubmit="return false;">
+            <div>
+              <div class="slider-row">
+                <div class="slider-label"><label for="roiOperators">Warehouse &amp; Ops Staff</label><span id="roiOperatorsVal">12 staff</span></div>
+                <input id="roiOperators" type="range" min="4" max="60" step="1" value="12">
+              </div>
+              <div class="slider-row">
+                <div class="slider-label"><label for="roiPicking">Current Avg. Picking Time (min/line)</label><span id="roiPickingVal">14.0 min</span></div>
+                <input id="roiPicking" type="range" min="6" max="22" step="0.5" value="14.0">
+              </div>
+              <div class="slider-row">
+                <div class="slider-label"><label for="roiLines">Monthly Picked Order Lines</label><span id="roiLinesVal">1,200 / mo</span></div>
+                <input id="roiLines" type="range" min="300" max="5000" step="100" value="1200">
+              </div>
+              <div class="slider-row" style="margin-bottom:0;">
+                <div class="slider-label"><label for="roiSites">Active Warehouses / Branches</label><span id="roiSitesVal">4 sites</span></div>
+                <input id="roiSites" type="range" min="1" max="20" step="1" value="4">
+              </div>
+            </div>
+
+            <div>
+              <div class="sim-outputs">
+                <div class="sim-metric">
+                  <span>Floor Hours Recovered</span>
+                  <strong id="outHours">1,968 hrs/yr</strong>
+                </div>
+                <div class="sim-metric">
+                  <span>Est. Annual Ops Savings</span>
+                  <strong id="outSavings">S/ 143,176/yr</strong>
+                </div>
+                <div class="sim-metric">
+                  <span>Est. Payback Window</span>
+                  <strong id="outPayback">13–16 months</strong>
+                  <div class="meter-bar"><div id="barPayback" class="meter-fill" style="width:74%"></div></div>
+                </div>
+                <div class="sim-metric">
+                  <span>Projected On-Time Rate</span>
+                  <strong id="outOnTime">91.0%</strong>
+                  <div class="meter-bar"><div id="barOnTime" class="meter-fill" style="width:91%"></div></div>
+                </div>
+              </div>
+              <div class="notice" style="margin-top:16px;padding:14px;background:var(--paper);border-left:3px solid var(--teal);font-size:12.5px;color:var(--muted);">
+                <strong>Custom Business Case:</strong> Figures above are directional benchmarks combining floor-hour recovery, fewer rush shipments, and tighter stock control. <a href="contact.html" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;">Request a tailored evaluation <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo-wrap">
+            <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore logo" width="142" height="38">
+          </div>
+          <p style="margin-top:12px;font-size:12.5px;max-width:340px;">TrazaCore Ingeniería &amp; Sistemas S.A.C. — Enterprise ERP, warehouse engineering, and cloud security operations across Peru and the Andean corridor.</p>
+          <p style="margin-top:8px;font-size:11.5px;color:#62dfd0;"><i class="bi bi-shield-check"></i> RUC: 20602849517 (ACTIVO / HABIDO) · Est. 2017 · Lima &amp; Callao</p>
+        </div>
+        <div>
+          <h4>Solutions &amp; Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About &amp; Leadership Team</a>
+            <a href="services.html">Services &amp; 4-Stage Approach</a>
+            <a href="technology.html">Executive Platform Overview</a>
+            <a href="projects.html">Case Studies &amp; ROI Simulator</a>
+            <a href="resources.html">PDF Playbooks &amp; Solution Finder</a>
+            <a href="contact.html">Request Consultation / Offices</a>
+          </div>
+        </div>
+        <div>
+          <h4>Technology &amp; Standards</h4>
+          <div class="footer-links">
+            <a href="https://www.odoo.com/documentation/19.0/" target="_blank" rel="noopener noreferrer">Odoo Enterprise v19 Docs <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://aws.amazon.com/architecture/well-architected/" target="_blank" rel="noopener noreferrer">AWS Well-Architected <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.zebra.com/us/en/products/mobile-computers/handheld.html" target="_blank" rel="noopener noreferrer">Zebra Industrial Hardware <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener noreferrer">ISO/IEC 27001 Security <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://cpe.sunat.gob.pe/" target="_blank" rel="noopener noreferrer">SUNAT E-Invoicing Portal <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 TrazaCore Ingeniería &amp; Sistemas S.A.C. · Surco &amp; Callao, Lima, Perú · <a href="mailto:sales@trazacore.pe" style="color:#62dfd0">sales@trazacore.pe</a></span>
+        <span>SIE 415-515 Company Website Deliverable · Client confidentiality preserved; representative anonymized metrics shown.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Executive Capability Brief Modal -->
+  <dialog id="briefDialog" class="exec-dialog" closedby="any" aria-labelledby="briefTitle">
+    <div class="dialog-head">
+      <h2 id="briefTitle"><i class="bi bi-file-earmark-text-fill"></i> TrazaCore · Corporate Capability Brief</h2>
+      <form method="dialog">
+        <button type="submit" class="dialog-close" autofocus>Close <i class="bi bi-x-lg"></i></button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <p style="margin-bottom:12px;"><strong>Company Snapshot</strong> for General Managers, CFOs, Operations, and IT Leaders evaluating TrazaCore Ingeniería &amp; Sistemas S.A.C.:</p>
+      <div class="data-table-wrap" style="margin-bottom:16px;">
+        <table class="data-table">
+          <tbody>
+            <tr><th>Legal Entity &amp; Tax ID</th><td>TRAZACORE INGENIERÍA &amp; SISTEMAS S.A.C. · RUC 20602849517 (ACTIVO / HABIDO)</td></tr>
+            <tr><th>Registry &amp; Track Record</th><td>SUNARP Electronic Entry No. 14089231 · Incorporated March 14, 2017 in Lima</td></tr>
+            <tr><th>Offices &amp; Hardware Lab</th><td>HQ: Av. Javier Prado Este 4495, Suite 602, Surco · Tech Lab: Av. Argentina 2140, Callao</td></tr>
+            <tr><th>Engineering Workforce</th><td>38 full-time specialists across ERP, Cloud Security, Warehouse Eng. &amp; Adoption</td></tr>
+            <tr><th>Quality &amp; Security</th><td>ISO 9001:2015 · ISO/IEC 27001:2022 · Odoo Gold Partner · AWS Select Tier · Zebra Partner</td></tr>
+            <tr><th>Commercial &amp; Support</th><td><a href="mailto:sales@trazacore.pe" style="color:var(--teal-dark);font-weight:700;">sales@trazacore.pe</a> · +51 (01) 480-9240 · 24/7 SLA Desk: +51 994 820 315</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="actions" style="margin-top:0;">
+        <a class="btn primary sm" href="downloads/TrazaCore_Corporate_Capability_Profile.pdf" download><i class="bi bi-download"></i> Download Corporate PDF</a>
+        <a class="btn outline-dark sm" href="contact.html">Request Discovery Call <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

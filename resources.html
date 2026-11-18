@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download TrazaCore executive and IT PDF briefs, and match TrazaCore services to your supply chain bottlenecks.">
+  <title>Resources & Solution Finder | TrazaCore Perú</title>
+  <link rel="icon" href="img/trazacore_logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="readingProgressBar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore Ingeniería &amp; Sistemas S.A.C. logo" width="142" height="38">
+      </a>
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+        <a href="about.html"><i class="bi bi-building"></i> About</a>
+        <a href="industries.html"><i class="bi bi-layers"></i> Industries</a>
+        <a href="services.html"><i class="bi bi-gear-wide-connected"></i> Services</a>
+        <a href="projects.html"><i class="bi bi-briefcase"></i> Case Studies</a>
+        <a href="technology.html"><i class="bi bi-cpu"></i> Platform</a>
+        <a href="resources.html" class="active" aria-current="page"><i class="bi bi-folder2-open"></i> Resources</a>
+        <button type="button" class="brief-btn" data-open-dialog="briefDialog"><i class="bi bi-file-earmark-text-fill"></i> Capability Brief</button>
+        <a class="contact-link" href="contact.html">Contact <i class="bi bi-arrow-up-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img class="page-hero-bg" src="img/res-playbooks.jpg" alt="TrazaCore executive briefs and technical playbooks library" width="1440" height="600" fetchpriority="high" decoding="async">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow light"><i class="bi bi-folder2-open"></i> RESOURCES &amp; SOLUTION FINDER</p>
+        <h1>Executive playbooks, IT briefs<br>and supply chain solution finder.</h1>
+        <p>Download concise PDF briefs tailored separately for executive leadership and IT teams or match your supply chain challenges to TrazaCore services below.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="notice" style="margin-top:24px;"><strong>Company video:</strong> Coming soon. The corporate video will be added here once the final version is ready.</div>        <p class="eyebrow"><i class="bi bi-file-earmark-pdf-fill"></i> EXECUTIVE &amp; TECHNICAL LIBRARY (PDF)</p>
+          <h2>Approved playbooks <span>for management and technical teams.</span></h2>
+        </div>
+
+        <div class="resource">
+          <img class="resource-thumb" src="img/res-playbooks.jpg" alt="Corporate capability profile document on executive desk" width="320" height="200" loading="lazy" decoding="async">
+          <div class="resource-info">
+            <strong>1. TrazaCore Corporate Capability Profile (PDF · For Leadership)</strong>
+            <p>Company overview, Surco &amp; Callao hubs, 38-specialist practice structure, ISO 9001/27001 credentials, and industry impact highlights.</p>
+          </div>
+          <a class="btn primary sm" href="downloads/TrazaCore_Corporate_Capability_Profile.pdf" download><i class="bi bi-download"></i> Download PDF</a>
+        </div>
+
+        <div class="resource">
+          <img class="resource-thumb" src="img/srv-cloud-infra.jpg" alt="Enterprise AWS cloud and security operations center" width="320" height="200" loading="lazy" decoding="async">
+          <div class="resource-info">
+            <strong>2. Enterprise AWS Cloud &amp; ISO/IEC 27001 Technical Brief (PDF · For IT Teams)</strong>
+            <p>Full engineering specifications: redundant cloud hosting, automatic disaster backups, role-based access rules, independent security testing, and full data ownership.</p>
+          </div>
+          <a class="btn primary sm" href="downloads/TrazaCore_AWS_Cybersecurity_Architecture_Brief.pdf" download><i class="bi bi-download"></i> Download PDF</a>
+        </div>
+
+        <div class="resource">
+          <img class="resource-thumb" src="img/srv-warehouse-aidc.jpg" alt="Multi-site warehouse barcode and ERP playbook" width="320" height="200" loading="lazy" decoding="async">
+          <div class="resource-info">
+            <strong>3. Multi-Site Warehouse &amp; Odoo ERP Playbook (PDF · Operations)</strong>
+            <p>How automated purchasing, mandatory quality holds, shelf organization, and our flexible 4-stage delivery approach transform warehouse KPIs.</p>
+          </div>
+          <a class="btn primary sm" href="downloads/TrazaCore_Warehouse_Odoo_Implementation_Guide.pdf" download><i class="bi bi-download"></i> Download PDF</a>
+        </div>
+
+        
+    </section>
+
+    <section id="readiness" class="section alt reveal">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow"><i class="bi bi-sliders"></i> TRAZACORE SOLUTION FINDER</p>
+          <h2>Pinpoint supply chain bottlenecks—<span>and how TrazaCore solves them.</span></h2>
+          <p class="sub">Select the challenges your company faces today across five core areas. Instantly see which TrazaCore services eliminate each bottleneck and unlock measurable ROI.</p>
+        </div>
+
+        <div id="readinessAssessment" class="sim-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <strong id="assessStepLabel" style="font-size:13px;color:var(--teal-dark);">Area 1 of 5</strong>
+            <span style="font-size:12px;color:var(--muted);">Interactive Service Matcher</span>
+          </div>
+          <div class="meter-bar" style="margin-bottom:22px;height:9px;"><div id="assessProgress" class="meter-fill" style="width:20%;"></div></div>
+
+          <div id="assessQuizBody">
+            <h3 id="assessQuestion" style="font-size:19px;color:var(--navy);margin-bottom:16px;"></h3>
+            <div id="assessOptions" style="display:grid;gap:10px;margin-bottom:22px;"></div>
+            <div style="display:flex;justify-content:space-between;gap:12px;">
+              <button type="button" id="assessPrev" class="btn outline-dark sm" disabled><i class="bi bi-arrow-left"></i> Previous</button>
+              <button type="button" id="assessNext" class="btn primary sm">Next Area <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div id="assessResult" hidden>
+            <span class="card-tag">Tailored TrazaCore Value Plan</span>
+            <h3 id="assessScoreText" style="font-size:26px;color:var(--navy);margin:6px 0;"></h3>
+            <p id="assessTierText" style="font-weight:700;color:var(--teal-dark);margin-bottom:6px;"></p>
+            <p id="assessRecText" style="font-size:14px;color:var(--muted);margin-bottom:10px;"></p>
+            <div id="assessMatches" class="solution-match-grid"></div>
+            <div class="actions" style="margin-top:4px;">
+              <a id="assessToContact" class="btn primary" href="contact.html">Discuss This Action Plan <i class="bi bi-arrow-right"></i></a>
+              <a class="btn outline-dark" href="services.html">Explore Full Services</a>
+              <button type="button" id="assessRetake" class="btn outline-dark"><i class="bi bi-arrow-counterclockwise"></i> Restart Diagnostic</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo-wrap">
+            <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore logo" width="142" height="38">
+          </div>
+          <p style="margin-top:12px;font-size:12.5px;max-width:340px;">TrazaCore Ingeniería &amp; Sistemas S.A.C. — Enterprise ERP, warehouse engineering, and cloud security operations across Peru and the Andean corridor.</p>
+          <p style="margin-top:8px;font-size:11.5px;color:#62dfd0;"><i class="bi bi-shield-check"></i> RUC: 20602849517 (ACTIVO / HABIDO) · Est. 2017 · Lima &amp; Callao</p>
+        </div>
+        <div>
+          <h4>Solutions &amp; Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About &amp; Leadership Team</a>
+            <a href="services.html">Services &amp; 4-Stage Approach</a>
+            <a href="technology.html">Executive Platform Overview</a>
+            <a href="projects.html">Case Studies &amp; ROI Simulator</a>
+            <a href="resources.html">PDF Playbooks &amp; Solution Finder</a>
+            <a href="contact.html">Request Consultation / Offices</a>
+          </div>
+        </div>
+        <div>
+          <h4>Technology &amp; Standards</h4>
+          <div class="footer-links">
+            <a href="https://www.odoo.com/documentation/19.0/" target="_blank" rel="noopener noreferrer">Odoo Enterprise v19 Docs <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://aws.amazon.com/architecture/well-architected/" target="_blank" rel="noopener noreferrer">AWS Well-Architected <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.zebra.com/us/en/products/mobile-computers/handheld.html" target="_blank" rel="noopener noreferrer">Zebra Industrial Hardware <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener noreferrer">ISO/IEC 27001 Security <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://cpe.sunat.gob.pe/" target="_blank" rel="noopener noreferrer">SUNAT E-Invoicing Portal <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 TrazaCore Ingeniería &amp; Sistemas S.A.C. · Surco &amp; Callao, Lima, Perú · <a href="mailto:sales@trazacore.pe" style="color:#62dfd0">sales@trazacore.pe</a></span>
+        <span>SIE 415-515 Company Website Deliverable · Client confidentiality preserved; representative anonymized metrics shown.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Executive Capability Brief Modal -->
+  <dialog id="briefDialog" class="exec-dialog" closedby="any" aria-labelledby="briefTitle">
+    <div class="dialog-head">
+      <h2 id="briefTitle"><i class="bi bi-file-earmark-text-fill"></i> TrazaCore · Corporate Capability Brief</h2>
+      <form method="dialog">
+        <button type="submit" class="dialog-close" autofocus>Close <i class="bi bi-x-lg"></i></button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <p style="margin-bottom:12px;"><strong>Company Snapshot</strong> for General Managers, CFOs, Operations, and IT Leaders evaluating TrazaCore Ingeniería &amp; Sistemas S.A.C.:</p>
+      <div class="data-table-wrap" style="margin-bottom:16px;">
+        <table class="data-table">
+          <tbody>
+            <tr><th>Legal Entity &amp; Tax ID</th><td>TRAZACORE INGENIERÍA &amp; SISTEMAS S.A.C. · RUC 20602849517 (ACTIVO / HABIDO)</td></tr>
+            <tr><th>Registry &amp; Track Record</th><td>SUNARP Electronic Entry No. 14089231 · Incorporated March 14, 2017 in Lima</td></tr>
+            <tr><th>Offices &amp; Hardware Lab</th><td>HQ: Av. Javier Prado Este 4495, Suite 602, Surco · Tech Lab: Av. Argentina 2140, Callao</td></tr>
+            <tr><th>Engineering Workforce</th><td>38 full-time specialists across ERP, Cloud Security, Warehouse Eng. &amp; Adoption</td></tr>
+            <tr><th>Quality &amp; Security</th><td>ISO 9001:2015 · ISO/IEC 27001:2022 · Odoo Gold Partner · AWS Select Tier · Zebra Partner</td></tr>
+            <tr><th>Commercial &amp; Support</th><td><a href="mailto:sales@trazacore.pe" style="color:var(--teal-dark);font-weight:700;">sales@trazacore.pe</a> · +51 (01) 480-9240 · 24/7 SLA Desk: +51 994 820 315</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="actions" style="margin-top:0;">
+        <a class="btn primary sm" href="downloads/TrazaCore_Corporate_Capability_Profile.pdf" download><i class="bi bi-download"></i> Download Corporate PDF</a>
+        <a class="btn outline-dark sm" href="contact.html">Request Discovery Call <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

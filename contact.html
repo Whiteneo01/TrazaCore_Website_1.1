@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact TrazaCore Ingeniería & Sistemas S.A.C. in Surco and Callao, Lima, Peru.">
+  <title>Contact & Office Locations | TrazaCore Perú</title>
+  <link rel="icon" href="img/trazacore_logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="readingProgressBar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore Ingeniería &amp; Sistemas S.A.C. logo" width="142" height="38">
+      </a>
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+        <a href="about.html"><i class="bi bi-building"></i> About</a>
+        <a href="industries.html"><i class="bi bi-layers"></i> Industries</a>
+        <a href="services.html"><i class="bi bi-gear-wide-connected"></i> Services</a>
+        <a href="projects.html"><i class="bi bi-briefcase"></i> Case Studies</a>
+        <a href="technology.html"><i class="bi bi-cpu"></i> Platform</a>
+        <a href="resources.html"><i class="bi bi-folder2-open"></i> Resources</a>
+        <button type="button" class="brief-btn" data-open-dialog="briefDialog"><i class="bi bi-file-earmark-text-fill"></i> Capability Brief</button>
+        <a class="contact-link active" href="contact.html" aria-current="page">Contact <i class="bi bi-arrow-up-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img class="page-hero-bg" src="img/contact-reception.jpg" alt="TrazaCore corporate headquarters consultation lounge in Santiago de Surco" width="1440" height="600" fetchpriority="high" decoding="async">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow light"><i class="bi bi-geo-alt-fill"></i> CONTACT &amp; LIMA / CALLAO PRESENCE</p>
+        <h1>Let's discuss your operations,<br>warehouses, and growth goals.</h1>
+        <p>Submit a consultation request below to schedule a discovery session or locate our Surco corporate headquarters and Callao hardware lab.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap contact-grid">
+        <div class="contact-box">
+          <h3><i class="bi bi-calendar-check-fill" style="color:var(--teal-dark)"></i> Request an Executive Discovery Call</h3>
+          <p style="font-size:13px;color:var(--muted);margin-bottom:18px;">Reach out for live executive demos, warehouse diagnostic visits, or tailored ROI assessments.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label for="cfName">Full Name &amp; Role *</label>
+              <span id="cfName-hint" class="hint">Example: Carlos Mendoza — General Manager / Operations Director</span>
+              <input type="text" id="cfName" name="name" required minlength="3" autocomplete="name" aria-describedby="cfName-hint" data-error="cfName-err">
+              <div id="cfName-err" class="error-msg"><i class="bi bi-exclamation-triangle-fill"></i> Please enter your full name (at least 3 characters).</div>
+            </div>
+
+            <div class="field">
+              <label for="cfCompany">Company / Organization *</label>
+              <span id="cfCompany-hint" class="hint">Registered corporate entity in Peru or Latin America</span>
+              <input type="text" id="cfCompany" name="company" required minlength="2" autocomplete="organization" aria-describedby="cfCompany-hint" data-error="cfCompany-err">
+              <div id="cfCompany-err" class="error-msg"><i class="bi bi-exclamation-triangle-fill"></i> Please specify your company name.</div>
+            </div>
+
+            <div class="field">
+              <label for="cfEmail">Corporate Email *</label>
+              <span id="cfEmail-hint" class="hint">Format: name@company.pe</span>
+              <input type="email" id="cfEmail" name="email" required autocomplete="email" aria-describedby="cfEmail-hint" data-error="cfEmail-err">
+              <div id="cfEmail-err" class="error-msg"><i class="bi bi-exclamation-triangle-fill"></i> Enter a valid corporate email address (e.g., name@company.pe).</div>
+            </div>
+
+            <div class="field">
+              <label for="cfSector">Area of Interest *</label>
+              <span id="cfSector-hint" class="hint">Choose the primary business priority you would like to discuss</span>
+              <select id="cfSector" name="sector" required aria-describedby="cfSector-hint" data-error="cfSector-err">
+                <option value="">Select a focus area…</option>
+                <option value="erp">Odoo Enterprise ERP &amp; Commercial Control Demo</option>
+                <option value="warehouse">Warehouse Modernization &amp; Mobile Scanning Audit</option>
+                <option value="cloud">Client-Owned Cloud &amp; ISO 27001 Security Review</option>
+                <option value="full">End-to-End Operations Modernization Scope</option>
+                <option value="support">24/7 Managed Operations &amp; SLA Support</option>
+              </select>
+              <div id="cfSector-err" class="error-msg"><i class="bi bi-exclamation-triangle-fill"></i> Please select a focus area from the dropdown.</div>
+            </div>
+
+            <div class="field">
+              <label for="cfMessage">Operational Scope &amp; Goals *</label>
+              <span id="cfMessage-hint" class="hint">Share number of warehouses/branches, current tools, or key pain points</span>
+              <textarea id="cfMessage" name="message" rows="4" required minlength="12" aria-describedby="cfMessage-hint" data-error="cfMessage-err"></textarea>
+              <div id="cfMessage-err" class="error-msg"><i class="bi bi-exclamation-triangle-fill"></i> Provide at least 12 characters describing your operational scope.</div>
+            </div>
+
+            <button type="submit" class="btn primary" style="width:100%;justify-content:center;">Submit Consultation Request <i class="bi bi-send-fill"></i></button>
+            <div id="contactSuccess" class="form-success" hidden></div>
+          </form>
+        </div>
+
+        <div style="display:grid;gap:20px;">
+          <div class="photo-frame">
+            <img src="img/contact-reception.jpg" alt="TrazaCore corporate office consultation lounge in Lima" width="960" height="600" loading="lazy" decoding="async">
+            <p class="photo-caption"><i class="bi bi-building"></i> Visit our Santiago de Surco executive boardroom or Callao hardware calibration lab.</p>
+          </div>
+
+          <div class="contact-box">
+            <h3><i class="bi bi-headset" style="color:var(--teal-dark)"></i> Direct Commercial &amp; Support Channels</h3>
+            <p style="font-size:13.5px;color:var(--muted);margin:10px 0;"><strong>Commercial &amp; Executive Demos:</strong><br><a href="mailto:sales@trazacore.pe" style="color:var(--teal-dark);font-weight:700;">sales@trazacore.pe</a> · <a href="tel:+51014809240" style="color:var(--teal-dark);font-weight:700;">+51 (01) 480-9240</a></p>
+            <p style="font-size:13.5px;color:var(--muted);margin:10px 0;"><strong>24/7 Priority SLA Desk:</strong><br><a href="mailto:support@trazacore.pe" style="color:var(--teal-dark);font-weight:700;">support@trazacore.pe</a> · <a href="tel:+51994820315" style="color:var(--teal-dark);font-weight:700;">+51 994 820 315</a></p>
+            <p style="font-size:13.5px;color:var(--muted);margin:10px 0;"><strong>Corporate HQ (Surco):</strong><br>Av. Javier Prado Este 4495, Suite 602, Santiago de Surco, Lima</p>
+            <p style="font-size:13.5px;color:var(--muted);margin:10px 0 0;"><strong>Hardware Calibration Hub (Callao):</strong><br>Av. Argentina 2140, Callao (minutes from Lima's maritime &amp; industrial logistics corridor)</p>
+          </div>
+
+          <div class="contact-box" style="background:#fff;">
+            <h3><i class="bi bi-pin-map-fill" style="color:var(--teal-dark)"></i> Interactive Office Locator</h3>
+            <div class="filter-bar" style="margin:12px 0;">
+              <button type="button" class="filter-btn" aria-pressed="true"
+                data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=-77.125,-12.062,-77.085,-12.036&layer=mapnik&marker=-12.049,-77.105"
+                data-map-label="Callao Tech &amp; Calibration Lab — Av. Argentina 2140, Callao">Callao Tech Lab</button>
+              <button type="button" class="filter-btn" aria-pressed="false"
+                data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=-76.988,-12.097,-76.955,-12.075&layer=mapnik&marker=-12.086,-76.971"
+                data-map-label="Corporate Headquarters — Av. Javier Prado Este 4495, Surco">Surco Corporate HQ</button>
+            </div>
+            <iframe id="locationMapFrame" title="TrazaCore Lima and Callao Office Map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-77.125,-12.062,-77.085,-12.036&layer=mapnik&marker=-12.049,-77.105"
+              style="width:100%;height:240px;border:1px solid var(--line);border-radius:6px;" loading="lazy"></iframe>
+            <p id="mapCaptionLabel" style="font-size:12px;color:var(--muted);margin-top:8px;">Callao Tech &amp; Calibration Lab — Av. Argentina 2140, Callao</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo-wrap">
+            <img class="brand-logo" src="img/trazacore_logo.png" alt="TrazaCore logo" width="142" height="38">
+          </div>
+          <p style="margin-top:12px;font-size:12.5px;max-width:340px;">TrazaCore Ingeniería &amp; Sistemas S.A.C. — Enterprise ERP, warehouse engineering, and cloud security operations across Peru and the Andean corridor.</p>
+          <p style="margin-top:8px;font-size:11.5px;color:#62dfd0;"><i class="bi bi-shield-check"></i> RUC: 20602849517 (ACTIVO / HABIDO) · Est. 2017 · Lima &amp; Callao</p>
+        </div>
+        <div>
+          <h4>Solutions &amp; Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About &amp; Leadership Team</a>
+            <a href="services.html">Services &amp; 4-Stage Approach</a>
+            <a href="technology.html">Executive Platform Overview</a>
+            <a href="projects.html">Case Studies &amp; ROI Simulator</a>
+            <a href="resources.html">PDF Playbooks &amp; Solution Finder</a>
+            <a href="contact.html">Request Consultation / Offices</a>
+          </div>
+        </div>
+        <div>
+          <h4>Technology &amp; Standards</h4>
+          <div class="footer-links">
+            <a href="https://www.odoo.com/documentation/19.0/" target="_blank" rel="noopener noreferrer">Odoo Enterprise v19 Docs <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://aws.amazon.com/architecture/well-architected/" target="_blank" rel="noopener noreferrer">AWS Well-Architected <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.zebra.com/us/en/products/mobile-computers/handheld.html" target="_blank" rel="noopener noreferrer">Zebra Industrial Hardware <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener noreferrer">ISO/IEC 27001 Security <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="https://cpe.sunat.gob.pe/" target="_blank" rel="noopener noreferrer">SUNAT E-Invoicing Portal <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 TrazaCore Ingeniería &amp; Sistemas S.A.C. · Surco &amp; Callao, Lima, Perú · <a href="mailto:sales@trazacore.pe" style="color:#62dfd0">sales@trazacore.pe</a></span>
+        <span>SIE 415-515 Company Website Deliverable · Client confidentiality preserved; representative anonymized metrics shown.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Executive Capability Brief Modal -->
+  <dialog id="briefDialog" class="exec-dialog" closedby="any" aria-labelledby="briefTitle">
+    <div class="dialog-head">
+      <h2 id="briefTitle"><i class="bi bi-file-earmark-text-fill"></i> TrazaCore · Corporate Capability Brief</h2>
+      <form method="dialog">
+        <button type="submit" class="dialog-close" autofocus>Close <i class="bi bi-x-lg"></i></button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <p style="margin-bottom:12px;"><strong>Company Snapshot</strong> for General Managers, CFOs, Operations, and IT Leaders evaluating TrazaCore Ingeniería &amp; Sistemas S.A.C.:</p>
+      <div class="data-table-wrap" style="margin-bottom:16px;">
+        <table class="data-table">
+          <tbody>
+            <tr><th>Legal Entity &amp; Tax ID</th><td>TRAZACORE INGENIERÍA &amp; SISTEMAS S.A.C. · RUC 20602849517 (ACTIVO / HABIDO)</td></tr>
+            <tr><th>Registry &amp; Track Record</th><td>SUNARP Electronic Entry No. 14089231 · Incorporated March 14, 2017 in Lima</td></tr>
+            <tr><th>Offices &amp; Hardware Lab</th><td>HQ: Av. Javier Prado Este 4495, Suite 602, Surco · Tech Lab: Av. Argentina 2140, Callao</td></tr>
+            <tr><th>Engineering Workforce</th><td>38 full-time specialists across ERP, Cloud Security, Warehouse Eng. &amp; Adoption</td></tr>
+            <tr><th>Quality &amp; Security</th><td>ISO 9001:2015 · ISO/IEC 27001:2022 · Odoo Gold Partner · AWS Select Tier · Zebra Partner</td></tr>
+            <tr><th>Commercial &amp; Support</th><td><a href="mailto:sales@trazacore.pe" style="color:var(--teal-dark);font-weight:700;">sales@trazacore.pe</a> · +51 (01) 480-9240 · 24/7 SLA Desk: +51 994 820 315</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="actions" style="margin-top:0;">
+        <a class="btn primary sm" href="downloads/TrazaCore_Corporate_Capability_Profile.pdf" download><i class="bi bi-download"></i> Download Corporate PDF</a>
+        <a class="btn outline-dark sm" href="contact.html">Request Discovery Call <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
