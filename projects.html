@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Representative industrial ERP and warehouse case studies plus an interactive operational ROI simulator.">
   <title>Case Studies & ROI Simulator | TrazaCore Perú</title>
-  <link rel="icon" href="img/trazacore_logo.png" type="image/png">
+  <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -105,32 +105,7 @@
         </article>
       </div>
     </section>
-<section class="section reveal">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">
-        <i class="bi bi-play-circle-fill"></i> TRAZACORE CORPORATE VIDEO
-      </p>
-      <h2>Discover <span>TrazaCore in action.</span></h2>
-      <p class="sub">
-        Learn how engineering, industrial operations and digital technology
-        come together to improve business performance.
-      </p>
-    </div>
 
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;">
-      <iframe
-        src="https://www.youtube.com/embed/T6sEf1a--Io"
-        title="TrazaCore Corporate Video"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</section>
     <section id="roi-simulator" class="section alt reveal">
       <div class="wrap">
         <div class="section-head">
@@ -184,6 +159,10 @@
               <div class="notice" style="margin-top:16px;padding:14px;background:var(--paper);border-left:3px solid var(--teal);font-size:12.5px;color:var(--muted);">
                 <strong>Custom Business Case:</strong> Figures above are directional benchmarks combining floor-hour recovery, fewer rush shipments, and tighter stock control. <a href="contact.html" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;">Request a tailored evaluation <i class="bi bi-arrow-right"></i></a>
               </div>
+              <div class="actions" style="margin-top:14px;align-items:center;">
+                <button type="button" id="copyRoiSummary" class="btn outline-dark sm"><i class="bi bi-clipboard-check"></i> Copy Executive ROI Summary</button>
+                <span id="copyRoiFeedback" role="status" aria-live="polite" style="font-size:12px;font-weight:700;color:var(--teal-dark);"></span>
+              </div>
             </div>
           </form>
         </div>
@@ -226,7 +205,7 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 TrazaCore Ingeniería &amp; Sistemas S.A.C. · Surco &amp; Callao, Lima, Perú · <a href="mailto:sales@trazacore.pe" style="color:#62dfd0">sales@trazacore.pe</a></span>
-        <span>SIE 415-515 Company Website Deliverable · Client confidentiality preserved; representative anonymized metrics shown.</span>
+        <span>ISO 9001:2015 &amp; ISO/IEC 27001:2022 Aligned Practice · Client confidentiality preserved; representative anonymized metrics shown.</span>
       </div>
     </div>
   </footer>
