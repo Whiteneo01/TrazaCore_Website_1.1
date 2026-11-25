@@ -2919,3 +2919,19 @@ dialog.exec-dialog::backdrop {
     flex-shrink: 0;
   }
 }
+/* Make the homepage capability text easier to read */
+#video-walkthrough .video-aside {
+  color: #52616B;
+}
+
+#video-walkthrough .video-aside p:not(.eyebrow) {
+  color: #52616B;
+}
+
+#video-walkthrough .video-aside .video-points span {
+  color: #52616B;
+}
+
+#video-walkthrough .video-aside .video-points strong {
+  color: #0B2230;
+}
