@@ -81,33 +81,34 @@
     document.documentElement.classList.add('gsap-ready');
     window.gsap.registerPlugin(window.ScrollTrigger);
 
-    // Hero timeline
+    // Hero timeline (fast entrance keeping CTA & visual card immediately legible)
     const heroEl = document.querySelector('.hero');
     if (heroEl) {
       const heroTl = window.gsap.timeline({ defaults: { ease: 'power3.out' } });
       heroTl
-        .fromTo('.hero-pill', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 })
-        .fromTo('.hero h1', { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, '-=0.38')
-        .fromTo('.hero .lead', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, '-=0.55')
-        .fromTo('.hero .actions', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65 }, '-=0.5')
-        .fromTo('.hero-kpis .hero-kpi', { y: 24, opacity: 0, scale: 0.96 }, { y: 0, opacity: 1, scale: 1, stagger: 0.09, duration: 0.65, ease: 'back.out(1.4)', clearProps: 'transform' }, '-=0.45')
-        .fromTo('.hero-visual-card, .hero-telemetry', { y: 32, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 0.9, clearProps: 'transform' }, '-=0.75');
+        .fromTo('.hero-pill', { y: 12, opacity: 0.4 }, { y: 0, opacity: 1, duration: 0.35 })
+        .fromTo('.hero h1', { y: 16, opacity: 0.45 }, { y: 0, opacity: 1, duration: 0.42 }, 0.05)
+        .fromTo('.hero .lead', { y: 14, opacity: 0.45 }, { y: 0, opacity: 1, duration: 0.42 }, 0.1)
+        .fromTo('.hero .actions', { y: 12, opacity: 0.45 }, { y: 0, opacity: 1, duration: 0.4 }, 0.14)
+        .fromTo('.hero-kpis .hero-kpi', { y: 14, opacity: 0.4 }, { y: 0, opacity: 1, stagger: 0.05, duration: 0.4, clearProps: 'transform' }, 0.16)
+        .fromTo('.hero-visual-card, .hero-telemetry', { y: 16, scale: 0.98, opacity: 0.5 }, { y: 0, scale: 1, opacity: 1, duration: 0.48, clearProps: 'transform' }, 0.08);
     }
 
-    // Section headers & split blocks (reversible scroll choreography)
+    // Section headers & split blocks (play once so scrolled elements never vanish)
     document.querySelectorAll('.section-head, .band .wrap').forEach((el) => {
       window.gsap.fromTo(
         el,
-        { y: 30, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 0.75,
+          duration: 0.52,
           ease: 'power3.out',
+          clearProps: 'transform,opacity',
           scrollTrigger: {
             trigger: el,
-            start: 'top 90%',
-            toggleActions: 'play reverse play reverse'
+            start: 'top 92%',
+            once: true
           }
         }
       );
@@ -118,18 +119,18 @@
       if (!cols.length) return;
       window.gsap.fromTo(
         cols,
-        { y: 28, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          stagger: 0.12,
-          duration: 0.75,
+          stagger: 0.08,
+          duration: 0.52,
           ease: 'power3.out',
-          clearProps: 'transform',
+          clearProps: 'transform,opacity',
           scrollTrigger: {
             trigger: splitEl,
-            start: 'top 88%',
-            toggleActions: 'play reverse play reverse'
+            start: 'top 90%',
+            once: true
           }
         }
       );
@@ -139,10 +140,12 @@
     const groupSelectors = [
       '.cards',
       '.matrix-grid',
-      '.flip-grid',
+      '.safeguard-grid',
+      '.testimonial-grid',
       '.logos',
       '.stats-grid',
-      '.stacked-visuals'
+      '.stacked-visuals',
+      '.process-row'
     ];
     groupSelectors.forEach((sel) => {
       document.querySelectorAll(sel).forEach((group) => {
@@ -150,19 +153,19 @@
         if (!items.length) return;
         window.gsap.fromTo(
           items,
-          { y: 30, opacity: 0, scale: 0.97 },
+          { y: 20, opacity: 0, scale: 0.98 },
           {
             y: 0,
             opacity: 1,
             scale: 1,
-            stagger: 0.08,
-            duration: 0.7,
+            stagger: 0.045,
+            duration: 0.5,
             ease: 'power3.out',
-            clearProps: 'transform',
+            clearProps: 'transform,opacity',
             scrollTrigger: {
               trigger: group,
-              start: 'top 88%',
-              toggleActions: 'play reverse play reverse'
+              start: 'top 90%',
+              once: true
             }
           }
         );
@@ -170,20 +173,20 @@
     });
 
     // Single rich blocks (projects, resources, simulator, video, blueprint, compare, contact, tables)
-    document.querySelectorAll('.compare-box, .video-card, .sim-box, .contact-box, .data-table-wrap, .blueprint-wrap, .project, .resource, .parallax-breather .breather-inner').forEach((el) => {
+    document.querySelectorAll('.compare-box, .video-card, .sim-box, .contact-box, .data-table-wrap, .resp-table-wrap, .blueprint-wrap, .project, .resource, .parallax-breather .breather-inner').forEach((el) => {
       window.gsap.fromTo(
         el,
-        { y: 30, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 0.75,
+          duration: 0.52,
           ease: 'power3.out',
-          clearProps: 'transform',
+          clearProps: 'transform,opacity',
           scrollTrigger: {
             trigger: el,
-            start: 'top 88%',
-            toggleActions: 'play reverse play reverse'
+            start: 'top 90%',
+            once: true
           }
         }
       );
@@ -201,7 +204,7 @@
     revealEls.forEach((sec) => {
       sec
         .querySelectorAll(
-          '.section-head, .split > *, .compare-box, .video-card, .sim-box, .contact-box, .data-table-wrap, .blueprint-wrap, .card, .matrix-card, .flip-card, .project, .resource, .logo-tile, .stat'
+          '.section-head, .split > *, .compare-box, .video-card, .sim-box, .contact-box, .data-table-wrap, .blueprint-wrap, .card, .matrix-card, .safeguard-card, .testimonial-card, .project, .resource, .logo-tile, .stat'
         )
         .forEach((child, idx) => {
           child.style.transitionDelay = `${Math.min(idx, 6) * 75}ms`;
@@ -272,21 +275,6 @@
       updateBreathers();
     }
   }
-
-  // 3c. 3D Flip Cards Deck Interaction (Click + Keyboard)
-  document.querySelectorAll('.flip-card').forEach((card) => {
-    const toggleFlip = () => {
-      const flipped = card.classList.toggle('is-flipped');
-      card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
-    };
-    card.addEventListener('click', toggleFlip);
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleFlip();
-      }
-    });
-  });
 
   // 4. Native <dialog> Modals (Brief + Diagram Lightbox) with closedBy fallback
   document.querySelectorAll('[data-open-dialog]').forEach((btn) => {
@@ -442,9 +430,16 @@
         btns.forEach((b) => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
         items.forEach((item) => {
           const match = filter === 'all' || (item.dataset.category || '').split(' ').includes(filter);
-          if (match) item.removeAttribute('hidden');
-          else item.setAttribute('hidden', '');
+          if (match) {
+            item.removeAttribute('hidden');
+            item.style.opacity = '1';
+          } else {
+            item.setAttribute('hidden', '');
+          }
         });
+        if (window.ScrollTrigger) {
+          window.ScrollTrigger.refresh();
+        }
       });
     });
   });
@@ -493,6 +488,43 @@
 
     [opsIn, pickIn, linesIn, sitesIn].forEach((inp) => inp.addEventListener('input', updateRoi));
     updateRoi();
+
+    const copyBtn = document.getElementById('copyRoiSummary');
+    const copyMsg = document.getElementById('copyRoiFeedback');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        const summary = [
+          'TrazaCore Executive ROI Projection',
+          `- Staffing & Scope: ${document.getElementById('roiOperatorsVal').textContent}, ${document.getElementById('roiSitesVal').textContent}, ${document.getElementById('roiLinesVal').textContent}`,
+          `- Baseline Picking Speed: ${document.getElementById('roiPickingVal').textContent} per line`,
+          `- Projected Floor Hours Recovered: ${document.getElementById('outHours').textContent}`,
+          `- Estimated Annual Savings: ${document.getElementById('outSavings').textContent}`,
+          `- Estimated Payback Window: ${document.getElementById('outPayback').textContent}`,
+          `- Projected On-Time Delivery Rate: ${document.getElementById('outOnTime').textContent}`,
+          'Generated via https://www.trazacore.pe (sales@trazacore.pe)'
+        ].join('\n');
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(summary);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = summary;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          if (copyMsg) {
+            copyMsg.textContent = 'Executive summary copied to clipboard.';
+            setTimeout(() => { copyMsg.textContent = ''; }, 3200);
+          }
+        } catch {
+          if (copyMsg) copyMsg.textContent = 'Copy unavailable — please copy figures directly.';
+        }
+      });
+    }
   }
 
   // 10. 5-Area Supply Chain Solution Finder (resources.html)
@@ -829,4 +861,21 @@
       });
     });
   }
+
+  // Floating Back-to-Top Control (All pages)
+  const backBtn = document.createElement('button');
+  backBtn.type = 'button';
+  backBtn.className = 'back-to-top';
+  backBtn.setAttribute('aria-label', 'Scroll back to top');
+  backBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+  document.body.appendChild(backBtn);
+
+  const syncBackBtn = () => {
+    backBtn.classList.toggle('is-visible', window.scrollY > 520);
+  };
+  window.addEventListener('scroll', syncBackBtn, { passive: true });
+  syncBackBtn();
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+  });
 })();
