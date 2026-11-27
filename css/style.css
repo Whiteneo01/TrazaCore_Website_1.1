@@ -2947,3 +2947,19 @@ dialog.exec-dialog::backdrop {
 .partner-mark { min-height:86px; display:flex; align-items:center; justify-content:center; padding:14px; background:#fff; border:1px solid var(--line); border-radius:12px; }
 .partner-mark img { display:block; max-width:100%; width:120px; height:48px; object-fit:contain; }
 @media (max-width:640px) { .partner-strip { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* ISO seal artwork */
+.logo-badge.logo-image:has(img[src*="iso9001"], img[src*="iso27001"]) {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background: #fff;
+  border: 0;
+}
+.logo-badge.logo-image img[src*="iso9001"],
+.logo-badge.logo-image img[src*="iso27001"] {
+  max-width: 56px;
+  max-height: 56px;
+  padding: 0;
+  object-fit: contain;
+}
