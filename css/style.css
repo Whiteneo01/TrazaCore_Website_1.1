@@ -2937,41 +2937,13 @@ dialog.exec-dialog::backdrop {
 }
 
 
-/* TrazaCore brand technology marks */
-.logo-badge .brand-icon {
-  width: 29px;
-  height: 29px;
-  object-fit: contain;
-  display: block;
+/* Brand and technology marks */
+.logo-badge img.brand-logo-img {
+  display:block; width:100%; height:100%; max-width:116px; max-height:54px;
+  object-fit:contain; padding:5px;
 }
-.service-tech-icons {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 24px;
-}
-.service-tech-icon {
-  min-height: 76px;
-  padding: 12px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: #fff;
-}
-.service-tech-icon img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  flex: 0 0 auto;
-}
-.service-tech-icon span {
-  color: var(--navy);
-  font-size: 12px;
-  font-weight: 700;
-}
-@media (max-width: 700px) {
-  .service-tech-icons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+.logo-badge.logo-image { display:flex; align-items:center; justify-content:center; }
+.partner-strip { display:grid; grid-template-columns:repeat(auto-fit,minmax(125px,1fr)); gap:14px; margin-top:24px; }
+.partner-mark { min-height:86px; display:flex; align-items:center; justify-content:center; padding:14px; background:#fff; border:1px solid var(--line); border-radius:12px; }
+.partner-mark img { display:block; max-width:100%; width:120px; height:48px; object-fit:contain; }
+@media (max-width:640px) { .partner-strip { grid-template-columns:repeat(2,minmax(0,1fr)); } }
